@@ -148,3 +148,10 @@
     flex-direction: column;
   }
 }
+
+@media print {
+  .main {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
