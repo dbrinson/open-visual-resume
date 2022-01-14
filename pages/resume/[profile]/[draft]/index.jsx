@@ -1,8 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Home.module.scss'
+import Experience from '/components/experience'
+import Header from '/components/header'
+import profiles from '/info/profile.json'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter();
+  const {profile, draft} = router.query;
+  console.log(profiles, profiles[profile]);
+  if (!profiles[profile]) {
+    return <></>
+  }
+  const {fullName, title, linkedin, location, phone, subprofile} = profiles[profile];
   return (
     <div className={styles.container}>
       <Head>
@@ -12,8 +23,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        The FitnessGram Pacer Test is a multi-stage aerobic capacity test that 
-        progressively gets more difficult as it continues.
+        <Header fullName={fullName} title={title} linkedin={linkedin} location={location} phone={phone} />
+        <Experience experiences={subprofile[draft].experience} />
       </main>
 
       <footer className={styles.footer}>
