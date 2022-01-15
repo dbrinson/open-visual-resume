@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-color: #e0ccf8;
   padding: 0.15in 0.5in;
+  flex: 0 1 auto;
 }
 
 .contactDetails {
@@ -29,7 +30,8 @@
 }
 .experienceSection {
   width: 100%;
-  padding: 0.15in 0.5in 0.15in 0.15in;
+  padding: 0.15in;
+  color: #223;
 
   .experience {
     background-color: #eeeefe;
@@ -42,6 +44,28 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .title {
+    margin: 0 0 0.15in 0.15in;
+  }
+
+  .role {
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .company {
+    font-size: 1.1em;
+  }
+
+  .experienceResponsibility {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .time {
+    color: #88a;
+  }
 }
 
 .nameTitle p {
@@ -49,12 +73,37 @@
 }
 
 .main {
-  min-height: 11in;
+  height: 11in;
   max-width: 8.5in;
   width: 100vw;
   padding: 0;
   margin: 0px auto;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+
+  .contentRight {
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+
+  .skillPane {
+    width: 35%;
+    padding: 0.15in 0.15in 0.15in 0.25in;
+    background-color: #fef;
+    height: 100%;
+
+    .skillName {
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .skill {
+      margin-left: 1rem;
+    }
+  }
 }
 
 .footer {
