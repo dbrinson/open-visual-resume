@@ -1,12 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '/styles/Home.module.scss'
 import profiles from '/info/profile.json'
 import { useRouter } from 'next/router'
 import React, { useRef } from 'react'
 import { useReactToPrint } from 'react-to-print';
 import Resume from '/components/resume'
-import { dateFormat } from '/util/formats'
 
 export default function Home() {
   const router = useRouter();

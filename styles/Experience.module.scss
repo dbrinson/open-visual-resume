@@ -1,40 +1,45 @@
-.experienceSection {
-    width: 100%;
-    padding: 0.15in;
+.sectionCard {
+    margin: 0.15in;
+    /*padding: 0.15in;*/
     color: #223;
+    border-style: dotted;
+    border-width: 1pt;
+    border-color: #ccccfe;
+    border-radius:0.1in;
+    background-color: #fefefe;
   
-    .experience {
-      background-color: #eeeefe;
-      border-radius: 0.25in;
-      padding: 0.2in;
-      border: 1pt dotted white;
+    .sectionText {
+        padding: 0.2in;
+        font-size: 0.9em;
     }
     
-    .experienceHeader {
-      display: flex;
-      justify-content: space-between;
+    .sectionHeader {
+        display: flex;
+        justify-content: space-between;
     }
   
     .title {
-      margin: 0 0 0.15in 0.15in;
+        background-color: #eeeefe;
+        border-radius: 0.1in 0.1in 0 0;
+        padding: 0.1in;
+        margin: 0;
     }
   
     .role {
-      font-weight: bold;
-      font-size: 0.9em;
+        font-weight: bold;
     }
   
     .company {
-      font-size: 1.1em;
+        font-size: 1.2em;
     }
   
-    .experienceResponsibility {
-      font-size: 0.8em;
-      margin: 0;
+    .sublist {
+        font-size: 0.9em;
+        margin: 0;
     }
   
     .time {
-      color: #88a;
+         color: #88a;
     }
   }
   
