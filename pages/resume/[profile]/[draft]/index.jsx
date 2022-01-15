@@ -25,7 +25,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={styles.bufferSpace}>
       <Resume profile={profiles[profile]} draft={draft} ref={componentRef} />
+      </div>
 
       <footer className={styles.footer}>
           <button onClick={handlePrint}>Print this out!</button>

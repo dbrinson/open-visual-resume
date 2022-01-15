@@ -3,8 +3,9 @@
     display: flex;
     justify-content: space-between;
     background-color: #e0ccf8;
-    padding: 0.15in 0.5in;
+    padding: 0.2in 0.5in;
     flex: 0 1 auto;
+    border-bottom: 2pt solid #9090a6;
   
     .pronouns {
         color: #666;
@@ -12,7 +13,7 @@
     }
   
     .name {
-        font-size: 20pt;
+        font-size: 23pt;
     }
     
     .nameTitle p {
@@ -20,6 +21,6 @@
     }
 
     .title {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 }

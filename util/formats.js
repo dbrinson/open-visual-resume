@@ -5,3 +5,32 @@ export function dateFormat(date) {
     console.log(year)
     return`${year}-${month}-${day}`
 }
+
+export function phoneFormat(toFormat) {
+    const phoneNumber = toFormat.replace(/[^\d]/, '');
+    
+    let formatted = '';
+
+    let hasCountryCode = false;
+    let hasAreaCode = false;
+
+    if (phoneNumber.length > 10) {
+        formatted += '+'+phoneNumber.slice(0, phoneNumber.length-10)+' ';
+        hasCountryCode = true;
+    }
+
+    if (phoneNumber.length === 10 || hasCountryCode) {
+        formatted += '(' + phoneNumber.slice(phoneNumber.length-10, phoneNumber.length-7) + ') ';
+        hasAreaCode = true;
+    }
+
+    if (phoneNumber.length === 7 || hasAreaCode) {
+        formatted += phoneNumber.slice(phoneNumber.length-7, phoneNumber.length-4) + '-' + phoneNumber.slice(phoneNumber.length-4);
+    }
+
+    if (formatted.length !== 0) {
+        return formatted;
+    }
+
+    return toFormat
+}

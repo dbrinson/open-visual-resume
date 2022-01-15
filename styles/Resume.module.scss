@@ -13,4 +13,17 @@
       flex: 1 1 auto;
       height: 100%;
     }
+
+    .note {
+      margin: auto 0.25in 0.15in 0.25in;
+      font-size: 0.7em;
+      color: #aaa;
+      padding-left: 0.1in;
+      text-indent: -0.1in;
+      align-self: flex-end;
+    }
+
+    .note::before {
+      content: '* ';
+    }
   }

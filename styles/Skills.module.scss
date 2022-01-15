@@ -1,5 +1,5 @@
 .skillPane {
-    min-width: 2.25in;
+    min-width: 2.5in;
     padding: 0.15in 0.25in 0.15in 0.25in;
     background-color: #fef;
     height: 100%;
@@ -14,6 +14,12 @@
     }
 
     .skill {
+      font-size: 0.9em;
       font-family: Menlo, Liberation Mono, sans-serif;
+      margin-bottom: 3pt;
+    }
+
+    .skillRatings {
+      margin-bottom: 0.15in;
     }
 }

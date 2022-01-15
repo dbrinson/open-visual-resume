@@ -9,8 +9,13 @@
     background-color: #fefefe;
   
     .sectionText {
-        padding: 0.2in;
+        padding: 0.2in 0.2in 0 0.2in;
         font-size: 0.9em;
+        text-align: justify;
+    }
+
+    .sectionText:last-of-type {
+        padding-bottom: 0.2in;
     }
     
     .sectionHeader {
@@ -34,12 +39,21 @@
     }
   
     .sublist {
-        font-size: 0.9em;
+        font-size: 0.95em;
         margin: 0;
+        padding-left: 1rem;
+    }
+
+    .description {
+        text-indent: 1em;
+        font-size: 0.8em;
+        color: #668;
+        padding: 5pt 1pt;
     }
   
     .time {
          color: #88a;
+         text-align: right;
     }
   }
   

@@ -11,8 +11,12 @@ export default function Experience({experiences}) {
                         <div className={styles.company}>{experience.company}</div>
                         <div className={styles.role}>{experience.title}</div>
                     </div>
-                    <div className={styles.time}>{[experience.startDate, '-', experience.endDate ? experience.endDate : 'Present']}</div>
+                    <div className={styles.time}>
+                        <div>{experience.location}</div>
+                        <div>{[experience.startDate, '-', experience.endDate ? experience.endDate : 'Present']}</div>
+                    </div>
                 </div>
+                <div className={styles.description}>{experience.abstract}</div>
                 <ul className={styles.sublist}>
                     {experience.responsibilities.map((text, index) => <li key={index}>{text}</li>)}
                 </ul>
