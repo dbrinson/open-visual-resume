@@ -1,0 +1,40 @@
+.experienceSection {
+    width: 100%;
+    padding: 0.15in;
+    color: #223;
+  
+    .experience {
+      background-color: #eeeefe;
+      border-radius: 0.25in;
+      padding: 0.2in;
+      border: 1pt dotted white;
+    }
+    
+    .experienceHeader {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .title {
+      margin: 0 0 0.15in 0.15in;
+    }
+  
+    .role {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+  
+    .company {
+      font-size: 1.1em;
+    }
+  
+    .experienceResponsibility {
+      font-size: 0.8em;
+      margin: 0;
+    }
+  
+    .time {
+      color: #88a;
+    }
+  }
+  

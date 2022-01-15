@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0ccf8;
+    padding: 0.15in 0.5in;
+    flex: 0 1 auto;
+  
+    .pronouns {
+        color: #666;
+        font-size: 0.6em;
+    }
+  
+    .name {
+        font-size: 20pt;
+    }
+    
+    .nameTitle p {
+        margin: 0px;
+    }
+
+    .title {
+        font-size: 12pt;
+    }
+}
