@@ -4,3 +4,7 @@
 :root.lilypad {
     @include spread-map($theme-lilypad);
 }
+
+:root.print {
+    @include spread-map($theme-print);
+}

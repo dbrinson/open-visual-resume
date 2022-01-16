@@ -10,8 +10,9 @@ import themes from '/info/themes.json'
 export default function Home() {
   const router = useRouter();
   const componentRef = useRef();
-  const [selectedTheme, setSelectedTheme] = useState('lilypad')
   const {profile, draft} = router.query;
+  const draftTheme = profiles[profile]?.subprofile[draft]?.theme;
+  const [selectedTheme, setSelectedTheme] = useState(draftTheme?draftTheme[0]:'lilypad')
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
@@ -34,7 +35,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.bufferSpace}>
-      <Resume profile={profiles[profile]} draft={draft} ref={componentRef} />
+        <Resume profile={profiles[profile]} draft={draft} ref={componentRef} />
       </div>
 
       <footer className={styles.footer}>

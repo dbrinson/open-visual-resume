@@ -23,3 +23,16 @@ $theme-lilypad: (
     $--theme-text-background: #fafefc,
     $--theme-paper-background: #f0fafa
 );
+
+$theme-print: (
+    $--theme-header: rgb(238, 238, 238),
+    $--theme-border: #555555,
+    $--theme-title: #c9c9c9,
+    $--theme-accentpane: #d8d8d8,
+    $--theme-bar-meat: #535353,
+    $--theme-text-color: rgb(47, 47, 48),
+    $--theme-subtext-color: rgb(141, 141, 141),
+    $--theme-fadeout-color: rgb(190, 190, 190),
+    $--theme-text-background: #ffffff,
+    $--theme-paper-background: #ffffff
+);
