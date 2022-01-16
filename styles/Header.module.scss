@@ -2,13 +2,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #e0ccf8;
+    background-color: #ff76a0;
     padding: 0.2in 0.5in;
     flex: 0 1 auto;
-    border-bottom: 2pt solid #9090a6;
-  
+    border-bottom: 2pt solid #942b44;
+    align-items:center;
+    
     .pronouns {
-        color: #666;
+        color: #5d080f;
         font-size: 0.6em;
     }
   

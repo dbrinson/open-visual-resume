@@ -7,13 +7,13 @@ import Summary from './summary'
 import Education from './education'
 
 const Resume = forwardRef(({profile, draft}, ref) => {
-    const {pronouns, fullName, title, linkedin, location, phone, subprofile} = profile;
+    const {pronouns, fullName, title, contactDetails, subprofile} = profile;
 
     return (
         <main className={styles.main} ref={ref}>
-            <Header pronouns={pronouns} fullName={fullName} title={title} linkedin={linkedin} location={location} phone={phone} />
+            <Header pronouns={pronouns} fullName={fullName} title={title} contactDetails={contactDetails} />
             <div className={styles.contentRight}>
-                <Skill skills={subprofile[draft].skills} contact={{linkedin, location, phone}} />
+                <Skill skills={subprofile[draft].skills} />
                 <div className={styles.mainContent}>
                     <Summary summaryText={subprofile[draft].abstract} />
                     <Experience experiences={subprofile[draft].experience} />

@@ -2,27 +2,29 @@
     box-sizing:unset;
     height: 0.8ex;
     position: relative;
-    background: #555;
+    // background: #555;
     border-radius: 2pt;
-    padding: 1pt;
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    // padding: 1pt;
+    // box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
     margin: 0.2ex;
+    border: 1pt solid #5d080f;
+
     .progress {
         display: block;
         height: 100%;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        background-color: rgb(194, 43, 174);
+        border-top-right-radius: 2pt;
+        border-bottom-right-radius: 2pt;
+        border-top-left-radius: 1pt;
+        border-bottom-left-radius: 1pt;
+        background-color: #942b44;
         background-image: linear-gradient(
           /*center bottom,*/
-          rgb(71, 43, 194) 37%,
-          rgb(157, 84, 240) 69%
+          #942b44 37%,
+          #f67197 69%
         );
-        box-shadow: 
-          inset 0 2px 9px  rgba(255,255,255,0.3),
-          inset 0 -2px 6px rgba(0,0,0,0.4);
+        // box-shadow: 
+        //   inset 0 2px 9px  rgba(255,255,255,0.3),
+        //   inset 0 -2px 6px rgba(0,0,0,0.4);
         position: relative;
         overflow: hidden;
       }
@@ -33,20 +35,20 @@
         top: 0; left: 0; bottom: 0; right: 0;
         background-image: linear-gradient(
           -45deg, 
-          rgba(255, 255, 255, .2) 25%, 
+          rgba(255, 255, 255, .4) 25%, 
           transparent 25%, 
           transparent 50%, 
-          rgba(255, 255, 255, .2) 50%, 
-          rgba(255, 255, 255, .2) 75%, 
+          rgba(255, 255, 255, .4) 50%, 
+          rgba(255, 255, 255, .4) 75%, 
           transparent 75%, 
           transparent
         );
         z-index: 1;
         background-size: 50px 50px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-right-radius: 2pt;
+        border-bottom-right-radius: 2pt;
+        border-top-left-radius: 1pt;
+        border-bottom-left-radius: 1pt;
         overflow: hidden;
     }
 }
