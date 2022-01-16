@@ -1,15 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #ff76a0;
+    background-color:  	theme-var($--theme-header);
     padding: 0.2in 0.5in;
     flex: 0 1 auto;
-    border-bottom: 2pt solid #942b44;
+    border-bottom: 2pt solid theme-var($--theme-border);
     align-items:center;
+    color: theme-var($--theme-text-color);
     
     .pronouns {
-        color: #5d080f;
+        color: theme-var($--theme-subtext-color);
         font-size: 0.6em;
     }
   

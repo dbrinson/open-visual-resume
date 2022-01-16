@@ -1,0 +1,25 @@
+$--theme-header: --theme-header;
+$--theme-border: --theme-border;
+$--theme-title: --theme-title;
+$--theme-accentpane: --theme-accentpane;
+$--theme-bar-meat: --theme-bar-meat;
+$--theme-text-color: --theme-text-color;
+$--theme-subtext-color: --theme-subtext-color;
+$--theme-fadeout-color: --theme-fadeout-color;
+$--theme-text-background: --theme-text-background;
+$--theme-paper-background: --theme-paper-background;
+
+
+// Default theme
+$theme-lilypad: (
+    $--theme-header: #88e6af,
+    $--theme-border: #265d5d,
+    $--theme-title: #d2eebc,
+    $--theme-accentpane: #c9edd1,
+    $--theme-bar-meat: #c99f9f,
+    $--theme-text-color: #223,
+    $--theme-subtext-color: #668,
+    $--theme-fadeout-color: #88a,
+    $--theme-text-background: #fafefc,
+    $--theme-paper-background: #f0fafa
+);

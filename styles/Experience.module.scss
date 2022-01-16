@@ -1,12 +1,16 @@
+@import 'variables';
+@import 'mixins';
+
 .sectionCard {
     margin: 0.15in;
     /*padding: 0.15in;*/
     color: #223;
     border-style: dotted;
     border-width: 1pt;
-    border-color: #f67197;
+    border-color: theme-var($--theme-border);
     border-radius:0.1in;
-    background-color: #fefefe;
+    background-color: theme-var($--theme-text-background);
+    color: theme-var($--theme-text-color);
   
     .sectionText {
         padding: 0.2in 0.2in 0 0.2in;
@@ -24,7 +28,7 @@
     }
   
     .title {
-        background-color: #ffc5d8;
+        background-color: theme-var($--theme-title);
         border-radius: 0.1in 0.1in 0 0;
         padding: 0.1in;
         margin: 0;
@@ -47,12 +51,12 @@
     .description {
         text-indent: 1em;
         font-size: 0.8em;
-        color: #668;
+        color: theme-var($--theme-subtext-color);
         padding: 5pt 1pt;
     }
   
     .time {
-         color: #88a;
+         color: theme-var($--theme-fadeout-color);
          text-align: right;
     }
   }

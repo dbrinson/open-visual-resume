@@ -1,6 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
 .contactDetails {
   padding-left: 0.2in;
-  border-left: 2pt solid #942b44;
+  border-left: 2pt solid theme-var($--theme-border);
 }
 
 .contactDetails p {

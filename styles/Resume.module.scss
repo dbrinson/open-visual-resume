@@ -1,10 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
 .main {
     height: 11in;
     max-width: 8.5in;
     width: 100vw;
     padding: 0;
     margin: 0px auto;
-    background-color: #fafafa;
+    background-color: theme-var($--theme-paper-background);
     display: flex;
     flex-direction: column;
   
@@ -17,7 +20,7 @@
     .note {
       margin: auto 0.25in 0.15in 0.25in;
       font-size: 0.7em;
-      color: #aaa;
+      color: theme-var($--theme-fadeout-color);
       padding-left: 0.1in;
       text-indent: -0.1in;
       align-self: flex-end;

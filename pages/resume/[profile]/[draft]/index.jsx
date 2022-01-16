@@ -2,21 +2,29 @@ import Head from 'next/head'
 import styles from '/styles/Home.module.scss'
 import profiles from '/info/profile.json'
 import { useRouter } from 'next/router'
-import React, { useRef } from 'react'
-import { useReactToPrint } from 'react-to-print';
+import React, { useRef, useState } from 'react'
+import { useReactToPrint } from 'react-to-print'
 import Resume from '/components/resume'
+import themes from '/info/themes.json'
 
 export default function Home() {
   const router = useRouter();
   const componentRef = useRef();
+  const [selectedTheme, setSelectedTheme] = useState('lilypad')
   const {profile, draft} = router.query;
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
 
+  const handleThemeChange = (e) => {
+    setSelectedTheme(e.target.value);
+  }
+
   if (!profiles[profile]) {
     return <></>
   }
+
+  document.getElementsByTagName('html')[0].classList = [selectedTheme];
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +38,15 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-          <button onClick={handlePrint}>Print this out!</button>
+          <div className={styles.footerControls}>
+          <div><button onClick={handlePrint}>Print this out!</button></div>
+          <div>
+            Select theme: <br />
+            <select value={selectedTheme} onChange={handleThemeChange}>
+              {themes.map(t => <option value={t} key={`theme.${t}`}>{t}</option>)}
+            </select>
+          </div>
+          </div>
       </footer>
     </div>
   )

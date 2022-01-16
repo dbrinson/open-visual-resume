@@ -1,8 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
 .skillPane {
     min-width: 2.5in;
     padding: 0.15in 0.25in 0.15in 0.25in;
-    background-color: #ffc5d8;
+    background-color: theme-var($--theme-accentpane);
     height: 100%;
+    color: theme-var($--theme-text-color);
 
     .skillName {
       font-size: 1.1em;
@@ -10,7 +14,7 @@
       font-weight: bold;
       padding-bottom: 2pt;
       margin-bottom: 5pt;
-      border-bottom: 1px solid #666;
+      border-bottom: 1pt solid theme-var($--theme-border);
     }
 
     .skill {
