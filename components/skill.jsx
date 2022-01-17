@@ -8,13 +8,13 @@ export default function Skill({skills}) {
     }
     return (
         <div className={styles.skillPane}>
-            {Object.keys(skills).map((skill) => <div key={skill}>
-                <div className={styles.skillName}>{skill}</div>
+            {skills.map((skill) => <div key={skill.treeName}>
+                <div className={styles.skillName}>{skill.treeName}</div>
                 <div className={styles.skillRatings}>
-                    {Object.keys(skills[skill]).map(subskill => 
-                        <div className={styles.skill} key={subskill}>
-                            <div>{subskill}</div>
-                            <Meter progress={skills[skill][subskill]} />
+                    {skill.branches.map(subskill => 
+                        <div className={styles.skill} key={subskill.skillName}>
+                            <div>{subskill.skillName}</div>
+                            <Meter progress={subskill.mastery} />
                         </div>
                     )}
                 </div>

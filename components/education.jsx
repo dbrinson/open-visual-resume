@@ -11,7 +11,10 @@ export default function Education({educations}) {
                         <div className={styles.company}>{[education.certification, education.major].join(', ')}</div>
                         <div className={styles.role}>{education.name}</div>
                     </div>
-                    <div className={styles.time}>{[education.startDate ? education.startDate+'-' : '', education.endDate ? education.endDate : 'Present']}</div>
+                    <div className={styles.time}>
+                        <div className={styles.time}>{[education.startDate ? education.startDate+'-' : '', education.endDate ? education.endDate : 'Present']}</div>
+                        <div>{education.location}</div>
+                    </div>
                 </div>
             </div>)}
         </div>
