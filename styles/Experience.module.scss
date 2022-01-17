@@ -7,10 +7,10 @@
     color: #223;
     border-style: dotted;
     border-width: 1pt;
-    border-color: theme-var($--theme-border);
+    border-color: #265d5d;//theme-var($--theme-border);
     border-radius:0.1in;
-    background-color: theme-var($--theme-text-background);
-    color: theme-var($--theme-text-color);
+    background-color: #fafefc; //theme-var($--theme-text-background);
+    color: #223; //theme-var($--theme-text-color);
   
     .sectionText {
         padding: 0.2in 0.2in 0 0.2in;
@@ -28,7 +28,7 @@
     }
   
     .title {
-        background-color: theme-var($--theme-title);
+        background-color: #d2eebc; //theme-var($--theme-title);
         border-radius: 0.1in 0.1in 0 0;
         padding: 0.1in;
         margin: 0;
@@ -51,12 +51,12 @@
     .description {
         text-indent: 1em;
         font-size: 0.8em;
-        color: theme-var($--theme-subtext-color);
+        color: #668; //theme-var($--theme-subtext-color);
         padding: 5pt 1pt;
     }
   
     .time {
-         color: theme-var($--theme-fadeout-color);
+         color: #88a; //theme-var($--theme-fadeout-color);
          text-align: right;
     }
   }

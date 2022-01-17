@@ -5,6 +5,7 @@
 }
 
 @function theme-var($key, $fallback: null, $map: $theme-lilypad) {
+    @debug "#{$key}";
     @if not map-has-key($map, $key) {
         @error "key: '#{$key}', is not a key in map: #{$map}";
     }

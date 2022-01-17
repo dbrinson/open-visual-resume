@@ -12,7 +12,7 @@ export default function Home() {
   const componentRef = useRef();
   const {profile, draft} = router.query;
   const draftTheme = profiles[profile]?.subprofile[draft]?.theme;
-  const [selectedTheme, setSelectedTheme] = useState(draftTheme?draftTheme[0]:'lilypad')
+  const [selectedTheme, setSelectedTheme] = useState(draftTheme?draftTheme[0]:'print')
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });

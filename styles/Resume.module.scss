@@ -7,7 +7,7 @@
     width: 100vw;
     padding: 0;
     margin: 0px auto;
-    background-color: theme-var($--theme-paper-background);
+    background-color: #f0fafa; //theme-var($--theme-paper-background);
     display: flex;
     flex-direction: column;
   
@@ -20,7 +20,7 @@
     .note {
       margin: auto 0.25in 0.15in 0.25in;
       font-size: 0.7em;
-      color: theme-var($--theme-fadeout-color);
+      color: #88a; //theme-var($--theme-fadeout-color);
       padding-left: 0.1in;
       text-indent: -0.1in;
       align-self: flex-end;

@@ -5,15 +5,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color:  	theme-var($--theme-header);
+    background-color:  	#88e6af; //theme-var($--theme-header);
     padding: 0.2in 0.5in;
     flex: 0 1 auto;
-    border-bottom: 2pt solid theme-var($--theme-border);
+    border-bottom: 2pt solid #265d5d; //theme-var($--theme-border);
     align-items:center;
-    color: theme-var($--theme-text-color);
+    color: #223; //theme-var($--theme-text-color);
     
     .pronouns {
-        color: theme-var($--theme-subtext-color);
+        color: #668; //theme-var($--theme-subtext-color);
         font-size: 0.6em;
     }
   

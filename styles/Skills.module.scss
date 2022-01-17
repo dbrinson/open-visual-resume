@@ -4,9 +4,9 @@
 .skillPane {
     min-width: 2.5in;
     padding: 0.15in 0.25in 0.15in 0.25in;
-    background-color: theme-var($--theme-accentpane);
+    background-color: #c9edd1; //theme-var($--theme-accentpane);
     height: 100%;
-    color: theme-var($--theme-text-color);
+    color: #223; //theme-var($--theme-text-color);
 
     .skillName {
       font-size: 1.1em;
@@ -14,7 +14,7 @@
       font-weight: bold;
       padding-bottom: 2pt;
       margin-bottom: 5pt;
-      border-bottom: 1pt solid theme-var($--theme-border);
+      border-bottom: 1pt solid #265d5d; //theme-var($--theme-border);
     }
 
     .skill {
