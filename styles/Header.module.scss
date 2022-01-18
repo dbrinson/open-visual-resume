@@ -1,23 +1,24 @@
 @import 'variables';
 @import 'mixins';
-
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color:  	#88e6af; //theme-var($--theme-header);
+    background-color:  	#F7E8B5 ; //theme-var($--theme-header);
     padding: 0.2in 0.5in;
     flex: 0 1 auto;
-    border-bottom: 2pt solid #265d5d; //theme-var($--theme-border);
+    border-bottom: 2pt solid #6D636D; //theme-var($--theme-border);
     align-items:center;
     color: #223; //theme-var($--theme-text-color);
     
     .pronouns {
-        color: #668; //theme-var($--theme-subtext-color);
-        font-size: 0.6em;
+        color: #557; //theme-var($--theme-subtext-color);
+        font-size: 1em;
     }
   
     .name {
+        font-family: "Bevan", serif;
         font-size: 23pt;
     }
     
