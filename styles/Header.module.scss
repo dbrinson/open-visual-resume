@@ -5,15 +5,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color:  	#F7E8B5 ; //theme-var($--theme-header);
+    background-color:  	#4f4c79 ; //theme-var($--theme-header);
     padding: 0.2in 0.5in;
     flex: 0 1 auto;
-    border-bottom: 2pt solid #6D636D; //theme-var($--theme-border);
+    border-bottom: 2pt solid #7f98c1; //theme-var($--theme-border);
     align-items:center;
-    color: #223; //theme-var($--theme-text-color);
+    color: #eef; //theme-var($--theme-text-color);
     
     .pronouns {
-        color: #557; //theme-var($--theme-subtext-color);
+        color: #ccd; //theme-var($--theme-subtext-color);
         font-size: 1em;
     }
   

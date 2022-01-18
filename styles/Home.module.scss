@@ -4,8 +4,11 @@
 .contactDetails {
   padding-left: 0.2in;
   font-size: 0.9em;
-  border-left: 2pt solid #6D636D; //theme-var($--theme-border);
-  color: #223;
+  border-left: 2pt solid #7f98c1; //theme-var($--theme-border);
+  color: #eef;
+  img {
+    filter: invert(100%);
+  }
 }
 
 .contactDetails p {
