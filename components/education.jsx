@@ -8,12 +8,12 @@ export default function Education({educations}) {
             {educations.map((education, index) => <div key={`education.${index}`} className={styles.sectionText}>
                 <div className={styles.sectionHeader}>
                     <div>
-                        <div className={styles.company}>{[education.certification, education.major].join(', ')}</div>
-                        <div className={styles.role}>{education.name}</div>
+                        <div className={styles.company}>{education.name}</div>
+                        <div className={styles.role}>{[education.certification, education.major].join(', ')}</div>
                     </div>
                     <div className={styles.time}>
-                        <div className={styles.time}>{[education.startDate ? education.startDate+'-' : '', education.endDate ? education.endDate : 'Present']}</div>
                         <div>{education.location}</div>
+                        <div className={styles.time}>{[education.startDate ? education.startDate+'-' : '', education.endDate ? education.endDate : 'Present']}</div>
                     </div>
                 </div>
             </div>)}

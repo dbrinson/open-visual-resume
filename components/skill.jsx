@@ -11,7 +11,7 @@ export default function Skill({skills}) {
             {skills.map((skill) => <div key={skill.treeName}>
                 <div className={styles.skillName}>{skill.treeName}</div>
                 <div className={styles.skillRatings}>
-                    {skill.branches.map(subskill => 
+                    {skill.branches.sort((a, b) => b.mastery - a.mastery).map(subskill => 
                         <div className={styles.skill} key={subskill.skillName}>
                             <div>{subskill.skillName}</div>
                             <Meter progress={subskill.mastery} />
